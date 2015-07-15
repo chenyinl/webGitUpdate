@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>staging.thunderbirds.com Update</title>
+        <title>staging.yourdomain.com Update</title>
         <style>
             div {
                 background-color:Azure;
@@ -14,7 +14,7 @@
         </style>
     </head>
     <body>
-        <h1>staging.thunderbirds.com update</h1>
+        <h1>staging.yourdomain.com update</h1>
         <form>
         <input 
                 type="submit" 
