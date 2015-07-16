@@ -1,0 +1,28 @@
+#!/usr/bin/expect
+set timeout 20
+
+set user USERNAME
+set pass PASSWORD
+set host HOSTURL
+
+
+spawn ssh $user@$host
+
+# change the following line
+expect "xxx@domain.com's password:"
+
+send "$pass\r"
+expect "$ "
+
+send "cd THE_DIR_WHERE_NEED_PULL\r"
+expect "$ "
+
+
+send "git pull\r"
+expect "Password: "
+
+send "GIT_PASSWORD\r"
+expect "$ "
+
+send "exit\r"
+expect eof
