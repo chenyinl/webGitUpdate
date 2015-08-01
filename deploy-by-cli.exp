@@ -11,18 +11,22 @@ spawn ssh $user@$host
 # change the following line
 expect "xxx@domain.com's password:"
 
+# response with password
 send "$pass\r"
 expect "$ "
 
+# go to the directory
 send "cd THE_DIR_WHERE_NEED_PULL\r"
 expect "$ "
 
-
+# run git pull
 send "git pull\r"
 expect "Password: "
 
+# git password
 send "GIT_PASSWORD\r"
 expect "$ "
 
+# exit
 send "exit\r"
 expect eof
